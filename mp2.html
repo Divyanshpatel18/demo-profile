@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demoi</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="skill.css">
+    <link rel="stylesheet" href="devpicglass.css">
+    <script src="https://kit.fontawesome.com/3ec4d6221c.js" crossorigin="anonymous"></script>
+</head>
+<body> 
+            <!-- header -->
+    <div class="container">
+            <!-- sidenav -->
+    <div class="sidebar sidebargo">
+        <!-- nav is removed and nav link class is putten -->
+      <nav class="nav-links">
+            <ul >
+                <li><a href="E:\code\profile\mp2.html"><i class="fa-solid fa-house-chimney-user"></i>Dashboard</a></li>
+                <li><a href="E:\code\profile\introprogress.html"><i class="fa-solid fa-user-astronaut"></i>Myintro</a></li>
+                <li><a href="E:\code\profile\services.html"><i class="fa-solid fa-taxi"></i>services</a></li>
+                <li><a href="E:\code\profile\blog.html"><i class="fa-brands fa-blogger"></i>blog</a></li>
+                <li><a href="E:\code\profile\contact.html"><i class="fa-solid fa-address-book"></i>Contact Me</a></li>
+                <div class="active"></div>
+            </ul>
+        </nav>   
+            
+        
+    </div>
+    <div class="main">
+        <div class="menu" id="menu">
+            <div>
+            <span class="line-1"></span>
+            <span class="line-2"></span>
+            <span class="line-3"></span>
+            </div>
+        </div>
+        <!-- <div class="hamburger">
+            <img src="hamburger.png" class="ham" alt="hamburger image" width="23px">
+            <img src="cross.png" alt=" cross image" class="cross" width="23px">
+        </div> -->
+        <div class="info">
+           <div class="devinfo">
+                 <div class="hello">Hi I am </div>
+                 <div  class="name" ><span class="auto-input"> </span></div>
+                 <!-- <div  class="about">Cricketer,Actor,Dancer</div> -->
+                 <div class="moreabout">I am a Student ,pursuing Integrated MTech. <br> Thia is my Demo Project <br> Its Under construction </div>
+                 <div class="buttons">
+                    <a href="E:\code\profile\cv.txt" target="=_blank">  <button class="btn2">DownloadCv</button></a>
+                    <a href="E:\code\profile\contact.html"> <button class="btn2">Contact Me</button></a>
+                   
+                 </div>
+           </div>
+           <div class="devpic">
+                <!-- <img src="devpic.png" alt="virat"> -->
+                <div class="card" data-tilt>
+                    <img src="Divyansh.jpeg" alt="virat">
+                    <h2>Divyansh</h2>
+                    <p>I am an IT Student</p>
+                    <div class="links">
+                        <a href="https://facebook.com"><img src="facebook.png"></a>
+                        <a href="https://twitter.com"><img src="twitter.png"></a>
+                        <a href="https://telegram.com"><img src="telegram.png"></a>
+                    </div>
+                    <!-- <a href="#" class="btn">message me</a> -->
+                </div>
+            </div>
+        </div> 
+      
+    </div>
+</div>
+<!-- <script src="script.js"></script> -->
+<script>
+    var menu=document.getElementById("menu");
+    menu.onclick=function(){
+        menu.classList.toggle("openmenu");
+    }
+    document.querySelector('.menu').addEventListener('click', ()=>{
+    document.querySelector('.sidebar').classList.toggle('sidebargo');
+    })
+    
+</script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    var typed=new Typed(".auto-input",{
+        strings:["","Enthusiastic","Determined","Learner","Developer"],
+        typeSpeed:100,
+        backSpeed:100,
+        loop:true
+    })
+</script>
+<script src="vanilla-tilt.js"></script>
+</body>
+</html>
